@@ -1,0 +1,19 @@
+0000:03:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Nitro+ Radeon RX 570/580 
+0000:03:00.1 Audio device: Advanced Micro Devices, Inc. [AMD/ATI] Ellesmere HDMI Audio [Radeon RX 470/480 / 570/580/590] 
+
+
+/device/0000:03:00.0/owner = "passthru" 
+/device/0000:03:00.1/owner = "passthru" 
+
+
+hypervisor.cpuid.v0  FALSE
+pciPassthru.use64bitMMIO  TRUE
+pciPassthru.64bitMMIOSizeGB   32
+
+
+pciPassthru0.opromEnabled TRUE
+pciPassthruO.filename   显卡 ROM 的路径
+
+/vmfs/volumes/SN550/Resourses/BIOS/RX570.rom
+/vmfs/volumes/NVME1/Catilina/Video_ROM/RX570.rom
+Catilina/Video_ROM/RX570.rom
